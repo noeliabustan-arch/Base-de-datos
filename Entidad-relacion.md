@@ -127,7 +127,7 @@
 
 <br>
 
-![Diagrama Tienda Informatica](./img/ejercicio6_tienda.png)
+![Diagrama Tienda Informatica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
 
 </details>
 
