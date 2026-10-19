@@ -146,7 +146,7 @@
 
 <br>
 
-![Diagrama Discos Musicales](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
+![Diagrama Discos Musicales](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/image.png)
 
 </details>
 
