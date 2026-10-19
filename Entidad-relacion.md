@@ -45,7 +45,7 @@
 
 <br>
 
-![Diagrama Biblioteca](./img/ejemplo1_biblioteca.png)
+![Diagrama Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165731.png)
 
 </details>
 
@@ -60,7 +60,7 @@
 
 <br>
 
-![Diagrama Restaurante](./img/ejemplo2_restaurante.png)
+![Diagrama Restaurante](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165906.png)
 
 </details>
 
@@ -75,7 +75,7 @@
 
 <br>
 
-![Diagrama Clinica](./img/ejemplo3_clinica.png)
+![Diagrama Clinica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165935.png)
 
 </details>
 
@@ -90,7 +90,7 @@
 
 <br>
 
-![Diagrama Aerolinea](./img/ejemplo4_aerolinea.png)
+![Diagrama Aerolinea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170009.png)
 
 </details>
 
@@ -146,7 +146,7 @@
 
 <br>
 
-![Diagrama Discos Musicales](./img/ejercicio7_discos.png)
+![Diagrama Discos Musicales](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
 
 </details>
 
@@ -165,7 +165,7 @@
 
 <br>
 
-![Diagrama Camiones](./img/ejercicio8_camiones.png)
+![Diagrama Camiones](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170450.png)
 
 </details>
 
@@ -184,7 +184,7 @@
 
 <br>
 
-![Diagrama Veterinaria](./img/ejercicio9_veterinaria.png)
+![Diagrama Veterinaria](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165150.png)
 
 </details>
 
