@@ -48,7 +48,21 @@
 ![Diagrama Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165731.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011151.png)
+
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejemplo 2: Pedidos de Restaurante
@@ -63,7 +77,22 @@
 ![Diagrama Restaurante](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165906.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011405.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011418.png)
+
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejemplo 3: Clínica Médica
@@ -78,7 +107,22 @@
 ![Diagrama Clinica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165935.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011554.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011608.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011621.png)
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejemplo 4: Sistema de Aerolínea
@@ -93,7 +137,22 @@
 ![Diagrama Aerolinea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170009.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011801.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011744.png)
+
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ## 🧩 Ejercicios Propuestos
@@ -113,7 +172,22 @@
 ![Diagrama Empresa Discografica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20162101.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011958.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012015.png)
+
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejercicio 6: Tienda Informática
@@ -130,7 +204,23 @@
 ![Diagrama Tienda Informatica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012342.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012304.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012400.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012410.png)
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejercicio 7: Discos Musicales
@@ -149,7 +239,22 @@
 ![Diagrama Discos Musicales](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/image.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012609.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012628.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012639.png)
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejercicio 8: Camiones
@@ -168,7 +273,23 @@
 ![Diagrama Camiones](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170450.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012849.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012905.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012916.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012924.png)
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 ### Ejercicio 9: Veterinaria
@@ -187,7 +308,24 @@
 ![Diagrama Veterinaria](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165150.png)
 
 </details>
+<details>
+<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
 
+<br>
+
+![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013200.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013213.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013213.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013237.png)
+![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013247.png)
+</details>
+
+<details>
+<summary><b>💻 Ver Código SQL</b></summary>
+
+<br>
+
+</details> 
 ---
 
 <div align="center">
