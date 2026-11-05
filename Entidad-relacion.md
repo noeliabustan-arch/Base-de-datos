@@ -18,318 +18,422 @@
 
 ---
 
-## 📂 Índice de Ejercicios
+<div align="center">
 
-- [📚 Ejemplos Guiados](#-ejemplos-guiados)
-  - [Ejemplo 1: Sistema de Biblioteca](#ejemplo-1-sistema-de-biblioteca)
-  - [Ejemplo 2: Pedidos de Restaurante](#ejemplo-2-pedidos-de-restaurante)
-  - [Ejemplo 3: Clínica Médica](#ejemplo-3-clínica-médica)
-  - [Ejemplo 4: Sistema de Aerolínea](#ejemplo-4-sistema-de-aerolínea)
-- [🧩 Ejercicios Propuestos](#-ejercicios-propuestos)
-  - [Ejercicio 5: Empresa Discográfica](#ejercicio-5-empresa-discográfica)
-  - [Ejercicio 6: Tienda Informática](#ejercicio-6-tienda-informática)
-  - [Ejercicio 7: Discos Musicales](#ejercicio-7-discos-musicales)
-  - [Ejercicio 8: Camiones](#ejercicio-8-camiones)
-  - [Ejercicio 9: Veterinaria](#ejercicio-9-veterinaria)
+# 📚 PORTAFOLIO DE BASES DE DATOS
+
+### Colección de Diagramas Entidad-Relación
+
+**9 ejercicios prácticos de modelado de bases de datos**
 
 ---
 
-## 📚 Ejemplos Guiados
+*Diseño conceptual · Diagramas E-R · Modelo relacional · SQL*
 
-### Ejemplo 1: Sistema de Biblioteca
-> 📖 **Descripción:**  
-> Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución[cite: 1].
+</div>
+
+## 📑 Índice de ejercicios
+
+| N.º | Ejercicio | Categoría |
+|:---:|:---|:---|
+| 01 | [Sistema de Biblioteca](#ejercicio-1-sistema-de-biblioteca) | Ejemplo guiado |
+| 02 | [Pedidos de Restaurante](#ejercicio-2-pedidos-de-restaurante) | Ejemplo guiado |
+| 03 | [Clínica Médica](#ejercicio-3-clínica-médica) | Ejemplo guiado |
+| 04 | [Sistema de Aerolínea](#ejercicio-4-sistema-de-aerolínea) | Ejemplo guiado |
+| 05 | [Empresa Discográfica](#ejercicio-5-empresa-discográfica) | Ejercicio propuesto |
+| 06 | [Tienda Informática](#ejercicio-6-tienda-informática) | Ejercicio propuesto |
+| 07 | [Discos Musicales](#ejercicio-7-discos-musicales) | Ejercicio propuesto |
+| 08 | [Camiones](#ejercicio-8-camiones) | Ejercicio propuesto |
+| 09 | [Veterinaria](#ejercicio-9-veterinaria) | Ejercicio propuesto |
+
+---
+
+# 01 · EJEMPLOS GUIADOS
+
+## Ejercicio 1: Sistema de Biblioteca
+
+**Descripción**
+
+Una biblioteca registra libros y autores. Un libro puede tener varios autores y un autor varios libros. Los socios toman libros prestados; de cada préstamo interesan la fecha de retiro y la de devolución.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
 ![Diagrama Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165731.png)
 
 </details>
+
 <details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011151.png)
+![Tabla Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011151.png)
 
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>💻 Código SQL</b></summary>
 
 <br>
 
-</details> 
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejemplo 2: Pedidos de Restaurante
-> 🍽️ **Descripción:**  
-> Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie[cite: 1].
+## Ejercicio 2: Pedidos de Restaurante
+
+**Descripción**
+
+Los clientes realizan pedidos que contienen varios platos con distinta cantidad. Los platos se agrupan en categorías. Cada pedido lo atiende un único mesero. El precio del plato debe registrarse tal como estaba al momento del pedido, aunque luego cambie.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
 ![Diagrama Restaurante](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165906.png)
 
 </details>
+
 <details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011405.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011418.png)
+![Tabla Restaurante 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011405.png)
+
+![Tabla Restaurante 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011418.png)
 
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>💻 Código SQL</b></summary>
 
 <br>
 
-</details> 
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejemplo 3: Clínica Médica
-> 🩺 **Descripción:**  
-> Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en fecha, hora y consultorio. De algunas citas se genera una receta que incluye medicamentos con dosis y duración. Cada médico pertenece a una especialidad[cite: 1].
+## Ejercicio 3: Clínica Médica
+
+**Descripción**
+
+Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en fecha, hora y consultorio. De algunas citas se genera una receta que incluye medicamentos con dosis y duración. Cada médico pertenece a una especialidad.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
-![Diagrama Clinica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165935.png)
+![Diagrama Clínica Médica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165935.png)
 
-</details>
-<details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
-
-<br>
-
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011554.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011608.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011621.png)
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-</details> 
+![Tabla Clínica 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011554.png)
+
+![Tabla Clínica 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011608.png)
+
+![Tabla Clínica 3](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011621.png)
+
+</details>
+
+<details>
+<summary><b>💻 Código SQL</b></summary>
+
+<br>
+
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejemplo 4: Sistema de Aerolínea
-> ✈️ **Descripción:**  
-> Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva[cite: 1].
+## Ejercicio 4: Sistema de Aerolínea
+
+**Descripción**
+
+Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cada vuelo lo realiza un avión. Los pasajeros realizan reservas para un vuelo específico, indicando asiento y tarifa pagada en el momento de la reserva.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
-![Diagrama Aerolinea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170009.png)
-
-</details>
-<details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
-
-<br>
-
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011801.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011744.png)
+![Diagrama Aerolínea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170009.png)
 
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-</details> 
+![Tabla Aerolínea 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011801.png)
+
+![Tabla Aerolínea 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011744.png)
+
+</details>
+
+<details>
+<summary><b>💻 Código SQL</b></summary>
+
+<br>
+
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-## 🧩 Ejercicios Propuestos
+# 02 · EJERCICIOS PROPUESTOS
 
-### Ejercicio 5: Empresa Discográfica
-> 🎶 **Descripción:**  
-> Una empresa discográfica necesita modelar los datos sobre sus diferentes recursos según las siguientes características[cite: 1]:
-> - **Manager:** De cada mánager se almacena un identificador de manager y su nombre. Un manager representa a una serie de artistas[cite: 1].
-> - **Artista:** Un artista es representado por un manager. De los artistas se almacena su nombre completo (usando un único atributo) y su NIF[cite: 1].
-> - **Evento de promoción:** Los artistas participan en eventos de promoción para dar a conocer sus trabajos. En un evento de promoción pueden participar varios artistas. De un evento se almacena un identificador único, la fecha de celebración y el número de asistentes[cite: 1].
+## Ejercicio 5: Empresa Discográfica
+
+**Descripción**
+
+Una empresa discográfica necesita modelar los datos sobre sus diferentes recursos según las siguientes características:
+
+- **Manager:** De cada mánager se almacena un identificador y su nombre. Un manager representa a una serie de artistas.
+- **Artista:** Un artista es representado por un manager. Se almacena su nombre completo y su NIF.
+- **Evento de promoción:** Los artistas participan en eventos de promoción para dar a conocer sus trabajos. En un evento pueden participar varios artistas. Se almacena un identificador único, la fecha de celebración y el número de asistentes.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
-![Diagrama Empresa Discografica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20162101.png)
-
-</details>
-<details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
-
-<br>
-
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011958.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012015.png)
+![Diagrama Empresa Discográfica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20162101.png)
 
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-</details> 
+![Tabla Discográfica 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20011958.png)
+
+![Tabla Discográfica 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012015.png)
+
+</details>
+
+<details>
+<summary><b>💻 Código SQL</b></summary>
+
+<br>
+
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejercicio 6: Tienda Informática
-> 💻 **Descripción:**  
-> Se desea crear una aplicación para la gestión de una tienda informática. La tienda dispone de una serie de productos que se venden a los clientes. De cada producto informático se desea guardar el código, descripción, precio y número de existencias. De cada cliente se desea guardar el código, nombre, apellidos, dirección y número telefónico[cite: 1].  
-> Un cliente puede comprar varios productos en la tienda y un mismo producto puede ser comprado por varios clientes. Cada vez que se compre un artículo quedará registrada la compra en la base de datos junto con la fecha en la que se compró el artículo[cite: 1].  
-> La tienda tiene contactos con varios proveedores que son los que suministran los productos. Un mismo producto puede ser suministrado por varios proveedores. De cada proveedor se desea guardar el código, nombres, apellidos, dirección, provincia y número de teléfono[cite: 1].
+## Ejercicio 6: Tienda Informática
+
+**Descripción**
+
+Se desea crear una aplicación para la gestión de una tienda informática. La tienda dispone de productos que se venden a los clientes.
+
+- **Productos:** Código, descripción, precio y número de existencias.
+- **Clientes:** Código, nombre, apellidos, dirección y número telefónico.
+- **Compras:** Un cliente puede comprar varios productos y un producto puede ser comprado por varios clientes. Cada compra registra su fecha.
+- **Proveedores:** Un producto puede ser suministrado por varios proveedores. Se almacena código, nombres, apellidos, dirección, provincia y teléfono.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
-![Diagrama Tienda Informatica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
+![Diagrama Tienda Informática](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20175312.png)
 
-</details>
-<details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
-
-<br>
-
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012342.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012304.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012400.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012410.png)
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-</details> 
+![Tabla Tienda 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012342.png)
+
+![Tabla Tienda 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012304.png)
+
+![Tabla Tienda 3](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012400.png)
+
+![Tabla Tienda 4](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012410.png)
+
+</details>
+
+<details>
+<summary><b>💻 Código SQL</b></summary>
+
+<br>
+
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejercicio 7: Discos Musicales
-> 🎵 **Descripción:**  
-> - La tienda vende discos de diferentes géneros musicales y cantantes[cite: 1].
-> - Cada género musical tiene un identificador[cite: 1].
-> - Cada disco tiene título, género musical, precio y cantante[cite: 1].
-> - De un cantante se registra el nombre y su país. Todo disco pertenece a un cantante y un cantante puede tener muchos discos. Además, un disco tiene un conjunto de canciones (identificador y título)[cite: 1].
-> - Un disco tiene muchas canciones y una canción puede estar en varios discos. Interesa conocer la posición de una canción en un determinado disco[cite: 1].
+## Ejercicio 7: Discos Musicales
+
+**Descripción**
+
+Una tienda vende discos de diferentes géneros musicales y cantantes.
+
+- Cada género musical tiene un identificador.
+- Cada disco tiene título, género musical, precio y cantante.
+- De cada cantante se registra su nombre y país.
+- Todo disco pertenece a un cantante y un cantante puede tener muchos discos.
+- Cada canción tiene un identificador y un título.
+- Un disco tiene muchas canciones y una canción puede estar en varios discos.
+- Se debe registrar la posición de cada canción dentro de un disco.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
 ![Diagrama Discos Musicales](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/image.png)
 
 </details>
+
 <details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012609.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012628.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012639.png)
+![Tabla Discos 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012609.png)
+
+![Tabla Discos 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012628.png)
+
+![Tabla Discos 3](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012639.png)
+
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>💻 Código SQL</b></summary>
 
 <br>
 
-</details> 
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejercicio 8: Camiones
-> 🚛 **Descripción:**  
-> Se desea informatizar la gestión de una empresa de transporte que reparte paquetes por toda España[cite: 1].  
-> - **Camioneros:** Encargados de llevar los paquetes. Se guarda cédula, nombre, teléfono, dirección, salario y población en que vive. Un camionero distribuye muchos paquetes[cite: 1].
-> - **Paquetes:** Interesa código del paquete, descripción, destinatario y dirección del destinatario. Un paquete solo puede ser distribuido por un camionero[cite: 1].
-> - **Provincias:** Se guarda el código de provincia y nombre. Un paquete solo puede llegar a una provincia, pero a una provincia pueden llegar varios paquetes[cite: 1].
-> - **Camiones:** Se guarda matrícula, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas diferentes, y un camión puede ser conducido por varios camioneros[cite: 1].
+## Ejercicio 8: Camiones
+
+**Descripción**
+
+Se desea informatizar la gestión de una empresa de transporte que reparte paquetes por toda España.
+
+- **Camioneros:** Cédula, nombre, teléfono, dirección, salario y población donde viven. Un camionero distribuye muchos paquetes.
+- **Paquetes:** Código, descripción, destinatario y dirección. Cada paquete es distribuido por un único camionero.
+- **Provincias:** Código y nombre. Cada paquete llega a una provincia y una provincia puede recibir varios paquetes.
+- **Camiones:** Matrícula, modelo, tipo y potencia. Un camionero puede conducir diferentes camiones en fechas distintas y un camión puede ser conducido por varios camioneros.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
 ![Diagrama Camiones](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170450.png)
 
 </details>
+
 <details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012849.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012905.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012916.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012924.png)
+![Tabla Camiones 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012849.png)
+
+![Tabla Camiones 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012905.png)
+
+![Tabla Camiones 3](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012916.png)
+
+![Tabla Camiones 4](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20012924.png)
+
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>💻 Código SQL</b></summary>
 
 <br>
 
-</details> 
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
-### Ejercicio 9: Veterinaria
-> 🐾 **Descripción:**  
-> - **Propietario:** Interesa cédula, apellidos, nombres, dirección y teléfonos. Un propietario puede llevar una o varias mascotas[cite: 1].
-> - **Mascota:** Interesa identificador, nombre, fecha de nacimiento y tipo. Una mascota la lleva uno y solo un propietario[cite: 1].
-> - **Personal de la clínica:** Interesa un código, cédula y nombre. Se distingue entre veterinarios (se guarda fecha_alta y especialidad) y auxiliares (interesa base de cotización)[cite: 1].
-> - **Consultas:** Las mascotas pasan consulta con los veterinarios. Un veterinario puede pasar consulta a ninguna o a varias mascotas, y una misma mascota puede pasar consulta una o más veces en fechas diferentes con varios veterinarios. Al pasar consulta se realiza un diagnóstico[cite: 1].
-> - **Familiar de contacto:** Cada propietario tiene un familiar de contacto para emergencias (cédula, nombre y teléfono). Si el propietario se da de alta en la clínica veterinaria, el familiar ya no interesa. El familiar es contacto de un solo propietario[cite: 1].
+## Ejercicio 9: Veterinaria
+
+**Descripción**
+
+Se desea diseñar una base de datos para gestionar una clínica veterinaria.
+
+- **Propietario:** Cédula, apellidos, nombres, dirección y teléfonos. Un propietario puede llevar una o varias mascotas.
+- **Mascota:** Identificador, nombre, fecha de nacimiento y tipo. Cada mascota pertenece a un único propietario.
+- **Personal:** Código, cédula y nombre. Se distingue entre veterinarios, auxiliares y otros tipos de personal.
+- **Veterinarios:** Fecha de alta y especialidad.
+- **Auxiliares:** Base de cotización.
+- **Consultas:** Una mascota puede pasar varias consultas con distintos veterinarios en diferentes fechas. Cada consulta registra un diagnóstico.
+- **Familiar de contacto:** Cédula, nombre y teléfono. Cada propietario tiene un familiar para emergencias. Si el propietario se da de alta en la clínica veterinaria, el familiar deja de interesar. El familiar es contacto de un solo propietario.
 
 <details>
-<summary>🔍 <b>Ver Diagrama E-R</b></summary>
+<summary><b>📐 Diagrama Entidad-Relación</b></summary>
 
 <br>
 
 ![Diagrama Veterinaria](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165150.png)
 
 </details>
+
 <details>
-<summary><b>📋 Ver Tabla de la Base de Datos</b></summary>
+<summary><b>📊 Tablas</b></summary>
 
 <br>
 
-![Tabla de base de datos](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013200.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013213.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013213.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013237.png)
-![](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013247.png)
+![Tabla Veterinaria 1](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013200.png)
+
+![Tabla Veterinaria 2](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013213.png)
+
+![Tabla Veterinaria 3](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013237.png)
+
+![Tabla Veterinaria 4](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-29%20013247.png)
+
 </details>
 
 <details>
-<summary><b>💻 Ver Código SQL</b></summary>
+<summary><b>💻 Código SQL</b></summary>
 
 <br>
 
-</details> 
+*Código SQL pendiente de incorporar.*
+
+</details>
+
 ---
 
 <div align="center">
 
-⭐ **Hecho con cariño por Noelia Bustan** ⭐
+**FIN DEL PORTAFOLIO**
+
+*9 ejercicios de modelado de bases de datos*
 
 </div>
+
