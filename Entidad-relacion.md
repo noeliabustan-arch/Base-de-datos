@@ -165,8 +165,91 @@ Los clientes realizan pedidos que contienen varios platos con distinta cantidad.
 <br>
 
 
-![Codigo de Biblioteca]()
+```sql
+USE ejercicios_BD;
 
+CREATE TABLE ej2_aeropuerto (
+    codigo INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    pais   VARCHAR(30) NOT NULL,
+    ciudad VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ej2_vuelo (
+    numero_vuelo      INT PRIMARY KEY,
+    hora              TIME NOT NULL,
+    origen            VARCHAR(30) NOT NULL,
+    destino           VARCHAR(30) NOT NULL,
+    aeropuerto_origen INT NOT NULL,
+    aeropuerto_destino INT NOT NULL,
+    FOREIGN KEY (aeropuerto_origen)  REFERENCES ej2_aeropuerto(codigo),
+    FOREIGN KEY (aeropuerto_destino) REFERENCES ej2_aeropuerto(codigo)
+);
+
+CREATE TABLE ej2_avion (
+    numero_avion INT PRIMARY KEY,
+    tipo         VARCHAR(30) NOT NULL,
+    base         VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ej2_programa (
+    codigo_programa INT PRIMARY KEY,
+    tipo            VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ej2_asigna (
+    numero_vuelo    INT NOT NULL,
+    numero_avion    INT NOT NULL,
+    codigo_programa INT NOT NULL,
+    PRIMARY KEY (numero_vuelo, numero_avion, codigo_programa),
+    FOREIGN KEY (numero_vuelo)    REFERENCES ej2_vuelo(numero_vuelo),
+    FOREIGN KEY (numero_avion)    REFERENCES ej2_avion(numero_avion),
+    FOREIGN KEY (codigo_programa) REFERENCES ej2_programa(codigo_programa)
+);
+
+CREATE TABLE ej2_sindicato (
+    codigo_sindicato INT PRIMARY KEY,
+    nombre           VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ej2_empleado (
+    dni              VARCHAR(10) PRIMARY KEY,
+    nombre           VARCHAR(30) NOT NULL,
+    direccion        VARCHAR(100),
+    telefono         VARCHAR(15),
+    sueldo           DECIMAL(10,2),
+    codigo_sindicato INT NOT NULL,
+    FOREIGN KEY (codigo_sindicato) REFERENCES ej2_sindicato(codigo_sindicato)
+);
+
+CREATE TABLE ej2_piloto (
+    dni         VARCHAR(10) PRIMARY KEY,
+    horas_vuelo INT NOT NULL,
+    FOREIGN KEY (dni) REFERENCES ej2_empleado(dni)
+);
+
+CREATE TABLE ej2_tecnico (
+    dni       VARCHAR(10) PRIMARY KEY,
+    cargo     VARCHAR(30) NOT NULL,
+    FOREIGN KEY (dni) REFERENCES ej2_empleado(dni)
+);
+
+CREATE TABLE ej2_trabaja (
+    dni          VARCHAR(10) NOT NULL,
+    numero_avion INT NOT NULL,
+    PRIMARY KEY (dni, numero_avion),
+    FOREIGN KEY (dni)          REFERENCES ej2_tecnico(dni),
+    FOREIGN KEY (numero_avion) REFERENCES ej2_avion(numero_avion)
+);
+
+CREATE TABLE ej2_controla (
+    dni          VARCHAR(10) NOT NULL,
+    numero_avion INT NOT NULL,
+    PRIMARY KEY (dni, numero_avion),
+    FOREIGN KEY (dni)          REFERENCES ej2_tecnico(dni),
+    FOREIGN KEY (numero_avion) REFERENCES ej2_avion(numero_avion)
+);
+```
 
 </details>
 
@@ -206,7 +289,64 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 <br>
 
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej3_sucursal (
+    codigo_sucursal INT PRIMARY KEY,
+    direccion       VARCHAR(100) NOT NULL,
+    telefono        VARCHAR(15)
+);
+
+CREATE TABLE ej3_empleado (
+    dni             VARCHAR(10) PRIMARY KEY,
+    nombre          VARCHAR(30) NOT NULL,
+    apellidos       VARCHAR(40) NOT NULL,
+    telefono        VARCHAR(15),
+    codigo_sucursal INT NOT NULL,
+    FOREIGN KEY (codigo_sucursal) REFERENCES ej3_sucursal(codigo_sucursal)
+);
+
+CREATE TABLE ej3_coche (
+    matricula       VARCHAR(10) PRIMARY KEY,
+    marca           VARCHAR(30) NOT NULL,
+    modelo          VARCHAR(30) NOT NULL,
+    color           VARCHAR(20),
+    precio_hora     DECIMAL(8,2) NOT NULL,
+    codigo_sucursal INT NOT NULL,
+    FOREIGN KEY (codigo_sucursal) REFERENCES ej3_sucursal(codigo_sucursal)
+);
+
+CREATE TABLE ej3_cliente (
+    dni       VARCHAR(10) PRIMARY KEY,
+    nombre    VARCHAR(30) NOT NULL,
+    apellidos VARCHAR(40) NOT NULL,
+    direccion VARCHAR(100),
+    telefono  VARCHAR(15)
+);
+
+CREATE TABLE ej3_cliente_avales (
+    dni_cliente VARCHAR(10) NOT NULL,
+    dni_aval    VARCHAR(10) NOT NULL,
+    PRIMARY KEY (dni_cliente, dni_aval),
+    FOREIGN KEY (dni_cliente) REFERENCES ej3_cliente(dni),
+    FOREIGN KEY (dni_aval)    REFERENCES ej3_cliente(dni)
+);
+
+CREATE TABLE ej3_alquila (
+    codigo_alquiler INT PRIMARY KEY,
+    fecha_inicio    DATE NOT NULL,
+    fecha_fin       DATE NOT NULL,
+    precio_total    DECIMAL(10,2),
+    dni_cliente     VARCHAR(10) NOT NULL,
+    matricula       VARCHAR(10) NOT NULL,
+    dni_empleado    VARCHAR(10) NOT NULL,
+    FOREIGN KEY (dni_cliente)  REFERENCES ej3_cliente(dni),
+    FOREIGN KEY (matricula)    REFERENCES ej3_coche(matricula),
+    FOREIGN KEY (dni_empleado) REFERENCES ej3_empleado(dni)
+);
+```
 
 
 </details>
@@ -245,7 +385,49 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 <br>
 
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej4_cientifico (
+    dni    VARCHAR(10) PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ej4_proyecto (
+    id_proyecto INT PRIMARY KEY,
+    nombre      VARCHAR(100) NOT NULL,
+    horas       INT NOT NULL
+);
+
+CREATE TABLE ej4_asiste (
+    dni         VARCHAR(10) NOT NULL,
+    id_proyecto INT NOT NULL,
+    PRIMARY KEY (dni, id_proyecto),
+    FOREIGN KEY (dni)         REFERENCES ej4_cientifico(dni),
+    FOREIGN KEY (id_proyecto) REFERENCES ej4_proyecto(id_proyecto)
+);
+
+CREATE TABLE ej4_editorial (
+    id_editorial INT PRIMARY KEY,
+    nombre       VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ej4_libro (
+    codigo       INT PRIMARY KEY,
+    titulo       VARCHAR(100) NOT NULL,
+    id_editorial INT NOT NULL,
+    FOREIGN KEY (id_editorial) REFERENCES ej4_editorial(id_editorial)
+);
+
+CREATE TABLE ej4_escribe (
+    dni    VARCHAR(10) NOT NULL,
+    codigo INT NOT NULL,
+    PRIMARY KEY (dni, codigo),
+    FOREIGN KEY (dni)    REFERENCES ej4_cientifico(dni),
+    FOREIGN KEY (codigo) REFERENCES ej4_libro(codigo)
+);
+```
 
 
 </details>
@@ -290,7 +472,52 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 <br>
 
 
-![Codigo de Biblioteca]()
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej5_centro (
+    codigo_centro INT PRIMARY KEY,
+    nombre        VARCHAR(50) NOT NULL,
+    direccion     VARCHAR(100)
+);
+
+CREATE TABLE ej5_profesor (
+    dni           VARCHAR(10) PRIMARY KEY,
+    nombre        VARCHAR(30) NOT NULL,
+    apellidos     VARCHAR(40) NOT NULL,
+    especialidad  VARCHAR(40) NOT NULL,
+    codigo_centro INT NOT NULL,
+    FOREIGN KEY (codigo_centro) REFERENCES ej5_centro(codigo_centro)
+);
+
+CREATE TABLE ej5_modulo (
+    codigo_modulo INT PRIMARY KEY,
+    nombre        VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ej5_imparte (
+    dni           VARCHAR(10) NOT NULL,
+    codigo_modulo INT NOT NULL,
+    PRIMARY KEY (dni, codigo_modulo),
+    FOREIGN KEY (dni)           REFERENCES ej5_profesor(dni),
+    FOREIGN KEY (codigo_modulo) REFERENCES ej5_modulo(codigo_modulo)
+);
+
+CREATE TABLE ej5_alumno (
+    dni       VARCHAR(10) PRIMARY KEY,
+    nombre    VARCHAR(30) NOT NULL,
+    apellidos VARCHAR(40) NOT NULL,
+    direccion VARCHAR(100)
+);
+
+CREATE TABLE ej5_matricula (
+    dni           VARCHAR(10) NOT NULL,
+    codigo_modulo INT NOT NULL,
+    PRIMARY KEY (dni, codigo_modulo),
+    FOREIGN KEY (dni)           REFERENCES ej5_alumno(dni),
+    FOREIGN KEY (codigo_modulo) REFERENCES ej5_modulo(codigo_modulo)
+);
+```
 
 
 </details>
@@ -338,7 +565,55 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 <br>
 
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej6_hospital (
+    codigo    INT PRIMARY KEY,
+    nombre    VARCHAR(50) NOT NULL,
+    direccion VARCHAR(100),
+    telefono  VARCHAR(15),
+    num_camas INT NOT NULL
+);
+
+CREATE TABLE ej6_sala (
+    codigo_sala INT NOT NULL,
+    codigo_hosp INT NOT NULL,
+    nombre      VARCHAR(50) NOT NULL,
+    num_camas   INT NOT NULL,
+    PRIMARY KEY (codigo_sala, codigo_hosp),
+    FOREIGN KEY (codigo_hosp) REFERENCES ej6_hospital(codigo)
+);
+
+CREATE TABLE ej6_doctor (
+    dni         VARCHAR(10) PRIMARY KEY,
+    nombre      VARCHAR(30) NOT NULL,
+    apellidos   VARCHAR(40) NOT NULL,
+    especialida VARCHAR(40) NOT NULL,
+    codigo_hosp INT NOT NULL,
+    FOREIGN KEY (codigo_hosp) REFERENCES ej6_hospital(codigo)
+);
+
+CREATE TABLE ej6_paciente (
+    inscripcion INT PRIMARY KEY,
+    nombre      VARCHAR(30) NOT NULL,
+    apellidos   VARCHAR(40) NOT NULL,
+    direccion   VARCHAR(100),
+    fecha_nac   DATE NOT NULL,
+    sexo        VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE ej6_ingreso (
+    num_ingreso INT PRIMARY KEY,
+    numero_cama INT NOT NULL,
+    codigo_sala INT NOT NULL,
+    codigo_hosp INT NOT NULL,
+    inscripcion INT NOT NULL,
+    FOREIGN KEY (codigo_sala, codigo_hosp) REFERENCES ej6_sala(codigo_sala, codigo_hosp),
+    FOREIGN KEY (inscripcion)              REFERENCES ej6_paciente(inscripcion)
+);
+```
 
 
 </details>
@@ -387,7 +662,69 @@ Una tienda vende discos de diferentes géneros musicales y cantantes.
 <br>
 
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej7_comisaria (
+    codigo    INT PRIMARY KEY,
+    direccion VARCHAR(100) NOT NULL,
+    telefono  VARCHAR(15)
+);
+
+CREATE TABLE ej7_policia (
+    dni         VARCHAR(10) PRIMARY KEY,
+    nombre      VARCHAR(30) NOT NULL,
+    apellidos   VARCHAR(40) NOT NULL,
+    fecha_asens DATE,
+    cargo       VARCHAR(30) NOT NULL,
+    codigo_com  INT NOT NULL,
+    FOREIGN KEY (codigo_com) REFERENCES ej7_comisaria(codigo)
+);
+
+CREATE TABLE ej7_sindicato (
+    codigo INT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE ej7_afiliado (
+    dni        VARCHAR(10) NOT NULL,
+    codigo_sin INT NOT NULL,
+    cuota      DECIMAL(8,2) NOT NULL,
+    PRIMARY KEY (dni, codigo_sin),
+    FOREIGN KEY (dni)        REFERENCES ej7_policia(dni),
+    FOREIGN KEY (codigo_sin) REFERENCES ej7_sindicato(codigo)
+);
+
+CREATE TABLE ej7_delito (
+    codigo      INT PRIMARY KEY,
+    descripcion VARCHAR(150) NOT NULL
+);
+
+CREATE TABLE ej7_detenido (
+    dni         VARCHAR(10) PRIMARY KEY,
+    nombre      VARCHAR(30) NOT NULL,
+    apellidos   VARCHAR(40) NOT NULL,
+    direccion   VARCHAR(100),
+    señas       VARCHAR(100)
+);
+
+CREATE TABLE ej7_comete (
+    dni_detenido VARCHAR(10) NOT NULL,
+    codigo_delito INT NOT NULL,
+    PRIMARY KEY (dni_detenido, codigo_delito),
+    FOREIGN KEY (dni_detenido)  REFERENCES ej7_detenido(dni),
+    FOREIGN KEY (codigo_delito) REFERENCES ej7_delito(codigo)
+);
+
+CREATE TABLE ej7_participa (
+    dni_policia  VARCHAR(10) NOT NULL,
+    dni_detenido VARCHAR(10) NOT NULL,
+    PRIMARY KEY (dni_policia, dni_detenido),
+    FOREIGN KEY (dni_policia)  REFERENCES ej7_policia(dni),
+    FOREIGN KEY (dni_detenido) REFERENCES ej7_detenido(dni)
+);
+```
 
 
 </details>
@@ -435,7 +772,55 @@ Se desea informatizar la gestión de una empresa de transporte que reparte paque
 <br>
 
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej8_provincia (
+    codigo INT PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ej8_destinatario (
+    id_destinatario INT PRIMARY KEY,
+    nombre          VARCHAR(30) NOT NULL,
+    direccion       VARCHAR(100)
+);
+
+CREATE TABLE ej8_camionero (
+    cedula    VARCHAR(10) PRIMARY KEY,
+    nombre    VARCHAR(30) NOT NULL,
+    direccion VARCHAR(100)
+);
+
+CREATE TABLE ej8_camionero_telefono (
+    cedula   VARCHAR(10) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    PRIMARY KEY (cedula, telefono),
+    FOREIGN KEY (cedula) REFERENCES ej8_camionero(cedula)
+);
+
+CREATE TABLE ej8_paquete (
+    codigo            INT PRIMARY KEY,
+    descripcion       VARCHAR(100),
+    direccion         VARCHAR(100),
+    codigo_provincia  INT NOT NULL,
+    id_destinatario   INT NOT NULL,
+    cedula            VARCHAR(10) NOT NULL,
+    FOREIGN KEY (codigo_provincia) REFERENCES ej8_provincia(codigo),
+    FOREIGN KEY (id_destinatario)  REFERENCES ej8_destinatario(id_destinatario),
+    FOREIGN KEY (cedula)           REFERENCES ej8_camionero(cedula)
+);
+
+CREATE TABLE ej8_camion (
+    matricula VARCHAR(10) PRIMARY KEY,
+    modelo    VARCHAR(30),
+    potencia  INT,
+    tipo      ENUM('Trailer', 'Rigido', 'Furgon') NOT NULL,
+    cedula    VARCHAR(10) NOT NULL,
+    FOREIGN KEY (cedula) REFERENCES ej8_camionero(cedula)
+);
+```
 
 
 </details>
@@ -485,7 +870,80 @@ Se desea diseñar una base de datos para gestionar una clínica veterinaria.
 
 <br>
 
-![Codigo de Biblioteca]()
+
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej9_propietario (
+    cedula    VARCHAR(10) PRIMARY KEY,
+    nombre    VARCHAR(30) NOT NULL,
+    apellidos VARCHAR(40) NOT NULL,
+    direccion VARCHAR(100)
+);
+
+CREATE TABLE ej9_telefonos (
+    telefono VARCHAR(15) NOT NULL,
+    cedula   VARCHAR(10) NOT NULL,
+    PRIMARY KEY (telefono, cedula),
+    FOREIGN KEY (cedula) REFERENCES ej9_propietario(cedula)
+);
+
+CREATE TABLE ej9_familiar (
+    cedula             VARCHAR(10) PRIMARY KEY,
+    nombre             VARCHAR(30) NOT NULL,
+    cedula_propietario VARCHAR(10) NOT NULL UNIQUE,
+    FOREIGN KEY (cedula_propietario) REFERENCES ej9_propietario(cedula)
+);
+
+CREATE TABLE ej9_telf_familiar (
+    telefono VARCHAR(15) NOT NULL,
+    cedula   VARCHAR(10) NOT NULL,
+    PRIMARY KEY (telefono, cedula),
+    FOREIGN KEY (cedula) REFERENCES ej9_familiar(cedula)
+);
+
+CREATE TABLE ej9_mascota (
+    id               INT PRIMARY KEY,
+    fecha_nacimiento DATE,
+    nombre           VARCHAR(30) NOT NULL,
+    tipo             VARCHAR(30) NOT NULL,
+    cedula           VARCHAR(10) NOT NULL,
+    FOREIGN KEY (cedula) REFERENCES ej9_propietario(cedula)
+);
+
+CREATE TABLE ej9_personal (
+    cedula VARCHAR(10) PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL,
+    codigo INT UNIQUE
+);
+
+CREATE TABLE ej9_veterinario (
+    cedula       VARCHAR(10) PRIMARY KEY,
+    nombre       VARCHAR(30) NOT NULL,
+    codigo       INT,
+    fecha_alta   DATE,
+    especialidad VARCHAR(50),
+    FOREIGN KEY (cedula) REFERENCES ej9_personal(cedula)
+);
+
+CREATE TABLE ej9_auxiliar (
+    cedula          VARCHAR(10) PRIMARY KEY,
+    nombre          VARCHAR(30) NOT NULL,
+    codigo          INT,
+    base_cotizacion FLOAT,
+    FOREIGN KEY (cedula) REFERENCES ej9_personal(cedula)
+);
+
+CREATE TABLE ej9_consulta (
+    fecha_atencion DATE NOT NULL,
+    diagnostico    VARCHAR(255),
+    id             INT NOT NULL,
+    cedula         VARCHAR(10) NOT NULL,
+    PRIMARY KEY (fecha_atencion, id, cedula),
+    FOREIGN KEY (id)     REFERENCES ej9_mascota(id),
+    FOREIGN KEY (cedula) REFERENCES ej9_veterinario(cedula)
+);
+```
 
 
 </details>
