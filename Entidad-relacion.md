@@ -79,7 +79,55 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 
 <br>
 
-![Codigo de Biblioteca]()
+```sql
+USE ejercicios_BD;
+
+CREATE TABLE ej1_autor (
+    id_autor INT PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE ej1_libro (
+    codigo INT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    editorial VARCHAR(50),
+    precio DECIMAL(10,2)
+);
+
+CREATE TABLE ej1_escribe (
+    id_autor INT NOT NULL,
+    codigo INT NOT NULL,
+    PRIMARY KEY (id_autor, codigo),
+    FOREIGN KEY (id_autor) REFERENCES ej1_autor(id_autor),
+    FOREIGN KEY (codigo) REFERENCES ej1_libro(codigo)
+);
+
+CREATE TABLE ej1_ejemplar (
+    n_copia INT NOT NULL,
+    codigo INT NOT NULL,
+    estado VARCHAR(30),
+    PRIMARY KEY (n_copia, codigo),
+    FOREIGN KEY (codigo) REFERENCES ej1_libro(codigo)
+);
+
+CREATE TABLE ej1_lector (
+    dni VARCHAR(10) PRIMARY KEY,
+    nombre VARCHAR(30) NOT NULL,
+    direccion VARCHAR(100),
+    telefono VARCHAR(15)
+);
+
+CREATE TABLE ej1_prestamo (
+    dni VARCHAR(10) NOT NULL,
+    codigo INT NOT NULL,
+    n_copia INT NOT NULL,
+    PRIMARY KEY (dni, codigo, n_copia),
+    FOREIGN KEY (dni) REFERENCES ej1_lector(dni),
+    FOREIGN KEY (codigo, n_copia)
+        REFERENCES ej1_ejemplar(codigo, n_copia)
+);
+```
+
 
 </details>
 
