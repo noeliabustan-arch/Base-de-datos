@@ -79,7 +79,7 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+![Codigo de Biblioteca]()
 
 </details>
 
@@ -116,7 +116,9 @@ Los clientes realizan pedidos que contienen varios platos con distinta cantidad.
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -155,7 +157,9 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -192,7 +196,9 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -235,7 +241,9 @@ Una empresa discográfica necesita modelar los datos sobre sus diferentes recurs
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -281,7 +289,9 @@ Se desea crear una aplicación para la gestión de una tienda informática. La t
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -328,7 +338,9 @@ Una tienda vende discos de diferentes géneros musicales y cantantes.
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -374,7 +386,9 @@ Se desea informatizar la gestión de una empresa de transporte que reparte paque
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+
+![Codigo de Biblioteca]()
+
 
 </details>
 
@@ -423,7 +437,8 @@ Se desea diseñar una base de datos para gestionar una clínica veterinaria.
 
 <br>
 
-*Código SQL pendiente de incorporar.*
+![Codigo de Biblioteca]()
+
 
 </details>
 
