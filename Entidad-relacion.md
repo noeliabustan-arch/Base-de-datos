@@ -172,7 +172,7 @@ Una aerolínea opera vuelos (cada uno con número, fecha, origen y destino), cad
 
 <br>
 
-![Diagrama Aerolínea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20170009.png)
+![Diagrama Aerolínea](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-11-05%20104333.png)
 
 </details>
 
