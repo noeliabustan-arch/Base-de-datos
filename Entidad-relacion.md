@@ -61,7 +61,7 @@ Una biblioteca registra libros y autores. Un libro puede tener varios autores y 
 
 <br>
 
-![Diagrama Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165731.png)
+![Diagrama Biblioteca](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-11-05%20100628.png)
 
 </details>
 
@@ -96,7 +96,7 @@ Los clientes realizan pedidos que contienen varios platos con distinta cantidad.
 
 <br>
 
-![Diagrama Restaurante](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165906.png)
+![Diagrama Restaurante](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-11-05%20103006.png)
 
 </details>
 
@@ -133,7 +133,7 @@ Los pacientes solicitan citas; cada cita la atiende un médico a un paciente en 
 
 <br>
 
-![Diagrama Clínica Médica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-10-19%20165935.png)
+![Diagrama Clínica Médica](https://github.com/noeliabustan-arch/Base-de-datos/blob/main/imagenes/Captura%20de%20pantalla%202026-11-05%20103854.png)
 
 </details>
 
